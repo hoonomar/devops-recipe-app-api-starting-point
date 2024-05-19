@@ -11,7 +11,7 @@ server {
 
     location / {
         include              gunicorn_headers;
-        porxy_redirect       off;
+        proxy_redirect       off;
         proxy_pass           http://${APP_HOST}:${APP_PORT};
         client_max_body_size 10M;
     }
