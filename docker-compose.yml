@@ -30,10 +30,9 @@ services:
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_HOST_AUTH_METHOD=trust
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
-      - POSTGRES_PASSWORD=password1
+      - POSTGRES_PASSWORD=changeme
 
 volumes:
   dev-db-data:
